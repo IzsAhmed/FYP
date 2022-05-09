@@ -1,0 +1,73 @@
+{
+  "Tables": [
+    {"label": "EconomicActivity", "value": "EconomicActivity.csv"},
+    {"label": "GainedQualifications", "value": "GainedQualifications.csv"},
+    {"label": "GeneralHealth", "value": "GeneralHealth.csv"},
+    {"label": "MaritalCivilStatus", "value": "MaritalCivilStatus.csv"},
+    {"label": "Religion", "value": "Religion.csv"}
+  ],
+  "EconomicActivity.csv":[
+    {"label":"All categories", "value":"Economic Activity: All categories: Economic activity; measures: Value"},
+    {"label":"Economically active: Total", "value":"Economic Activity: Economically active: Total; measures: Value"},
+    {"label":"Economically active: Employee: Part-time", "value":"Economic Activity: Economically active: Employee: Part-time; measures: Value"},
+    {"label":"Economically active: Employee: Full-time", "value":"Economic Activity: Economically active: Employee: Full-time; measures: Value"},
+    {"label":"Economically active: Self-employed with employees: Part-time;", "value":"Economic Activity: Economically active: Self-employed with employees: Part-time; measures: Value"},
+    {"label":"Economically active: Self-employed with employees: Full-time", "value":"Economic Activity: Economically active: Self-employed with employees: Full-time; measures: Value"},
+    {"label":"Economically active: Self-employed without employees: Part-time;", "value":"Economic Activity: Economically active: Self-employed without employees: Part-time; measures: Value"},
+    {"label":"Economically active: Self-employed without employees: Full-time", "value":"Economic Activity: Economically active: Self-employed without employees: Full-time; measures: Value"},
+    {"label":"Economically active: Unemployed", "value":"Economic Activity: Economically active: Unemployed; measures: Value"},
+    {"label":"Economically active: Full-time student", "value":"Economic Activity: Economically active: Full-time student; measures: Value"},
+    {"label":"Economically inactive: Total", "value":"Economic Activity: Economically inactive: Total; measures: Value"},
+    {"label":"Economically inactive: Retired", "value":"Economic Activity: Economically inactive: Retired; measures: Value"},
+    {"label":"Economically inactive: Student (including full-time students)", "value":"Economic Activity: Economically inactive: Student (including full-time students); measures: Value"},
+    {"label":"Economically inactive: Looking after home or family", "value":"Economic Activity: Economically inactive: Looking after home or family; measures: Value"},
+    {"label":"Economically inactive: Long-term sick or disabled", "value":"Economic Activity: Economically inactive: Long-term sick or disabled; measures: Value"},
+    {"label":"Economically inactive: Other", "value":"Economic Activity: Economically inactive: Other; measures: Value"}
+  ],
+  "GainedQualifications.csv": [
+    {"label":"All usual residents aged 16 and over", "value":"Qualification: All usual residents aged 16 and over; measures: Value"},
+    {"label":"No qualifications", "value":"Qualification: No qualifications; measures: Value"},
+    {"label":"1-4 O levels/CSE/GCSEs (any grades), Entry Level, Foundation Diploma", "value":"Qualification: 1-4 O levels/CSE/GCSEs (any grades), Entry Level, Foundation Diploma; measures: Value"},
+    {"label":"NVQ Level 1, Foundation GNVQ, Basic Skills", "value":"Qualification: NVQ Level 1, Foundation GNVQ, Basic Skills; measures: Value"},
+    {"label":"5+ O level (Passes)/CSEs (Grade 1)/GCSEs (Grades A*-C), School Certificate, 1 A level/2-3 AS levels/VCEs, Higher Diploma, Welsh Baccalaureate Intermediate Diploma; measures: Value", "value":"Qualification: 5+ O level (Passes)/CSEs (Grade 1)/GCSEs (Grades A*-C), School Certificate, 1 A level/2-3 AS levels/VCEs, Higher Diploma, Welsh Baccalaureate Intermediate Diploma; measures: Value"},
+    {"label":"NVQ Level 2, Intermediate GNVQ, City and Guilds Craft, BTEC First/General Diploma, RSA Diploma", "value":"Qualification: NVQ Level 2, Intermediate GNVQ, City and Guilds Craft, BTEC First/General Diploma, RSA Diploma; measures: Value"},
+    {"label":"Apprenticeship", "value":"Qualification: Apprenticeship; measures: Value"},
+    {"label":"2+ A levels/VCEs, 4+ AS levels, Higher School Certificate, Progression/Advanced Diploma, Welsh Baccalaureate Advanced Diploma", "value":"Qualification: 2+ A levels/VCEs, 4+ AS levels, Higher School Certificate, Progression/Advanced Diploma, Welsh Baccalaureate Advanced Diploma; measures: Value"},
+    {"label":"NVQ Level 3, Advanced GNVQ, City and Guilds Advanced Craft, ONC, OND, BTEC National, RSA Advanced Diploma", "value":"Qualification: NVQ Level 3, Advanced GNVQ, City and Guilds Advanced Craft, ONC, OND, BTEC National, RSA Advanced Diploma; measures: Value"},
+    {"label":"Degree (for example BA, BSc), Higher degree (for example MA, PhD, PGCE)", "value":"Qualification: Degree (for example BA, BSc), Higher degree (for example MA, PhD, PGCE); measures: Value"},
+    {"label":"NVQ Level 4-5, HNC, HND, RSA Higher Diploma, BTEC Higher Level", "value":"Qualification: NVQ Level 4-5, HNC, HND, RSA Higher Diploma, BTEC Higher Level; measures: Value"},
+    {"label":"Professional qualifications (for example teaching, nursing, accountancy)", "value":"Qualification: Professional qualifications (for example teaching, nursing, accountancy); measures: Value"},
+    {"label":"Other vocational/work-related qualifications", "value":"Qualification: Other vocational/work-related qualifications; measures: Value"},
+    {"label":"Foreign qualifications","value":"Qualification: Foreign qualifications; measures: Value"}
+  ],
+  "GeneralHealth.csv": [
+    {"label": "All categories: General health", "value": "General Health: All categories: General health; measures: Value"},
+    {"label": "Very good health", "value": "General Health: Very good health; measures: Value"},
+    {"label": "Fair health", "value": "General Health: Fair health; measures: Value"},
+    {"label": "Good health", "value": "General Health: Good health; measures: Value"},
+    {"label": "Bad health", "value": "General Health: Bad health; measures: Value"},
+    {"label": "Very bad health", "value": "General Health: Very bad health; measures: Value"}
+  ],
+  "MaritalCivilStatus.csv": [
+    {"label": "All usual residents aged 16+", "value": "Marital Status: All usual residents aged 16+; measures: Value"},
+    {"label": "Single (never married or never registered a same-sex civil partnership)", "value": "Marital Status: Single (never married or never registered a same-sex civil partnership); measures: Value"},
+    {"label": "Married", "value": "Marital Status: Married; measures: Value"},
+    {"label": "In a registered same-sex civil partnership", "value": "Marital Status: In a registered same-sex civil partnership; measures: Value"},
+    {"label": "Separated (but still legally married or still legally in a same-sex civil partnership)", "value": "Marital Status: Separated (but still legally married or still legally in a same-sex civil partnership); measures: Value"},
+    {"label": "Divorced or formerly in a same-sex civil partnership which is now legally dissolved", "value": "Marital Status: Divorced or formerly in a same-sex civil partnership which is now legally dissolved; measures: Value"},
+    {"label": "Widowed or surviving partner from a same-sex civil partnership", "value": "Marital Status: Widowed or surviving partner from a same-sex civil partnership; measures: Value"}
+  ],
+  "Religion.csv": [
+    {"label": "All categories: Religion", "value": "Religion: All categories: Religion; measures: Value"},
+    {"label": "Has religion", "value": "Religion: Has religion; measures: Value"},
+    {"label": "Christian", "value": "Religion: Christian; measures: Value"},
+    {"label": "Buddhist", "value": "Religion: Buddhist; measures: Value"},
+    {"label": "Hindu", "value": "Religion: Hindu; measures: Value"},
+    {"label": "Jewish", "value": "Religion: Jewish; measures: Value"},
+    {"label": "Muslim", "value": "Religion: Muslim; measures: Value"},
+    {"label": "Sikh", "value": "Religion: Sikh; measures: Value"},
+    {"label": "Other religion", "value": "Religion: Other religion; measures: Value"},
+    {"label": "No religion", "value": "Religion: No religion; measures: Value"},
+    {"label": "Religion not stated", "value": "Religion: Religion not stated; measures: Value"}
+    ]
+}

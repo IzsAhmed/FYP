@@ -1,0 +1,84 @@
+{
+  "Tables": [
+    {"label": "EconomicActivity", "value": "EconomicActivity"},
+    {"label": "GainedQualifications", "value": "GainedQualifications"},
+    {"label": "GeneralHealth", "value": "GeneralHealth"},
+    {"label": "MaritalCivilStatus", "value": "MaritalCivilStatus"},
+    {"label": "Religion", "value": "Religion"}
+  ],
+  "EconomicActivity":[
+    {"label":"All categories", "value":"Economic Activity: All categories: Economic activity; measures: Value"},
+    {"label":"Economically active: Total", "value":"Economic Activity: Economically active: Total; measures: Value"},
+    {"label":"Economically active: Employee: Part-time", "value":"Economic Activity: Economically active: Employee: Part-time; measures: Value"},
+    {"label":"Economically active: Employee: Full-time", "value":"Economic Activity: Economically active: Employee: Full-time; measures: Value"},
+    {"label":"Economically active: Self-employed with employees: Part-time;", "value":"Economic Activity: Economically active: Self-employed with employees: Part-time; measures: Value"},
+    {"label":"Economically active: Self-employed with employees: Full-time", "value":"Economic Activity: Economically active: Self-employed with employees: Full-time; measures: Value"},
+    {"label":"Economically active: Self-employed without employees: Part-time;", "value":"Economic Activity: Economically active: Self-employed without employees: Part-time; measures: Value"},
+    {"label":"Economically active: Self-employed without employees: Full-time", "value":"Economic Activity: Economically active: Self-employed without employees: Full-time; measures: Value"},
+    {"label":"Economically active: Unemployed", "value":"Economic Activity: Economically active: Unemployed; measures: Value"},
+    {"label":"Economically active: Full-time student", "value":"Economic Activity: Economically active: Full-time student; measures: Value"},
+    {"label":"Economically inactive: Total", "value":"Economic Activity: Economically inactive: Total; measures: Value"},
+    {"label":"Economically inactive: Retired", "value":"Economic Activity: Economically inactive: Retired; measures: Value"},
+    {"label":"Economically inactive: Student (including full-time students)", "value":"Economic Activity: Economically inactive: Student (including full-time students); measures: Value"},
+    {"label":"Economically inactive: Looking after home or family", "value":"Economic Activity: Economically inactive: Looking after home or family; measures: Value"},
+    {"label":"Economically inactive: Long-term sick or disabled", "value":"Economic Activity: Economically inactive: Long-term sick or disabled; measures: Value"},
+    {"label":"Economically inactive: Other", "value":"Economic Activity: Economically inactive: Other; measures: Value"}
+    ],
+  "GainedQualifications": {
+    "columns": {
+      "1":"Qualification: All usual residents aged 16 and over; measures: Value",
+      "2":"Qualification: No qualifications; measures: Value",
+      "3":"Qualification: 1-4 O levels/CSE/GCSEs (any grades), Entry Level, Foundation Diploma; measures: Value",
+      "4":"Qualification: NVQ Level 1, Foundation GNVQ, Basic Skills; measures: Value",
+      "5":"Qualification: 5+ O level (Passes)/CSEs (Grade 1)/GCSEs (Grades A*-C), School Certificate, 1 A level/2-3 AS levels/VCEs, Higher Diploma, Welsh Baccalaureate Intermediate Diploma; measures: Value",
+      "6":"Qualification: NVQ Level 2, Intermediate GNVQ, City and Guilds Craft, BTEC First/General Diploma, RSA Diploma; measures: Value",
+      "7":"Qualification: Apprenticeship; measures: Value",
+      "8":"Qualification: 2+ A levels/VCEs, 4+ AS levels, Higher School Certificate, Progression/Advanced Diploma, Welsh Baccalaureate Advanced Diploma; measures: Value",
+      "9":"Qualification: NVQ Level 3, Advanced GNVQ, City and Guilds Advanced Craft, ONC, OND, BTEC National, RSA Advanced Diploma; measures: Value",
+      "10":"Qualification: Degree (for example BA, BSc), Higher degree (for example MA, PhD, PGCE); measures: Value",
+      "11":"Qualification: NVQ Level 4-5, HNC, HND, RSA Higher Diploma, BTEC Higher Level; measures: Value",
+      "12":"Qualification: Professional qualifications (for example teaching, nursing, accountancy); measures: Value",
+      "13":"Qualification: Other vocational/work-related qualifications; measures: Value",
+      "14":"Qualification: Foreign qualifications; measures: Value"
+
+    }
+  },
+  "GeneralHealth": {
+    "columns": {
+      "1":"General Health: All categories: General health; measures: Value",
+      "2":"General Health: Very good health; measures: Value",
+      "3":"General Health: Good health; measures: Value",
+      "4":"General Health: Fair health; measures: Value",
+      "5":"General Health: Bad health; measures: Value",
+      "6":"General Health: Very bad health; measures: Value"
+
+    }
+  },
+  "MaritalCivilStatus": {
+    "columns": {
+      "1":"Marital Status: All usual residents aged 16+; measures: Value",
+      "2":"Marital Status: Single (never married or never registered a same-sex civil partnership); measures: Value",
+      "3":"Marital Status: Married; measures: Value",
+      "4":"Marital Status: In a registered same-sex civil partnership; measures: Value",
+      "5":"Marital Status: Separated (but still legally married or still legally in a same-sex civil partnership); measures: Value",
+      "6":"Marital Status: Divorced or formerly in a same-sex civil partnership which is now legally dissolved; measures: Value",
+      "7":"Marital Status: Widowed or surviving partner from a same-sex civil partnership; measures: Value"
+
+    }
+  },
+  "Religion": {
+    "columns": {
+      "1":"Religion: All categories: Religion; measures: Value",
+      "2":"Religion: Has religion; measures: Value",
+      "3":"Religion: Christian; measures: Value",
+      "4":"Religion: Buddhist; measures: Value",
+      "5":"Religion: Hindu; measures: Value",
+      "6":"Religion: Jewish; measures: Value",
+      "7":"Religion: Muslim; measures: Value",
+      "8":"Religion: Sikh; measures: Value",
+      "9":"Religion: Other religion; measures: Value",
+      "10":"Religion: No religion; measures: Value",
+      "11":"Religion: Religion not stated; measures: Value"
+    }
+  }
+}

@@ -58,7 +58,7 @@ def update_graph(option_slctd, tableLoads):
     print(type(option_slctd))
 
     container = "The religion chosen by user was: {}".format(option_slctd)
-    url = f"Data\{tableLoads}"
+    url = f"ProcessedData\{tableLoads}"
     pop_data = pd.read_csv(url)
     pop_data.head()
 

@@ -29,6 +29,7 @@ def detectOutliers(table1, chosenCol1, table2, chosenCol2):
 
     merged = thisTable1.merge(thisTable2)
     correlate = merged.corr(method='pearson')
+    print(merged.to_string())
     print(correlate)
     return (merged, correlate)
 

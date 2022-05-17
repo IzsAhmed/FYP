@@ -29,30 +29,54 @@ app.layout = html.Div([
 
     html.H1("Census Data Visualiser", style={'text-align': 'center'}),
 
-    dcc.Dropdown(id="slct_table",
-                 options=tableList['Tables'],
-                 multi=False,
-                 value="EconomicActivity.csv",
-                 style={'width': "40%"}
-                 ),
+    html.H3("Target Table and Column", style={'text-align': 'left'}),
+    html.Div(
+        className="row", children=[
+            dcc.Dropdown(id="slct_table",
+                         options=tableList['Tables'],
+                         multi=False,
+                         value="EconomicActivity.csv",
+                         style={'width': "100%"}
+                         ),
 
-    dcc.Dropdown(id="slct_data",
-                 multi=False,
-                 style={'width': "40%"}
-                 ),
+            dcc.Dropdown(id="slct_data",
+                         multi=False,
+                         style={'width': "100%"}
+                         ),
+    ], style=dict(display='flex')),
 
+    html.H3("Secondary Table and Column", style={'text-align': 'left'}),
+    html.Div(
+        className="row", children=[
+            dcc.Dropdown(id="slct_table2",
+                         options=tableList['Tables'],
+                         multi=False,
+                         value="EconomicActivity.csv",
+                         style={'width': "100%"}
+                         ),
+
+            dcc.Dropdown(id="slct_data2",
+                         multi=False,
+                         style={'width': "100%"}
+                         ),
+
+    ], style=dict(display='flex')),
     html.Div(id='output_container', children=[]),
     html.Br(),
 
-    dcc.Graph(id='my_map', figure={}),
+    dcc.Graph(id='my_map', figure={}, style={"border":"2px black solid"}),
 
-    html.H3("Outliers Above average", style={'text-align': 'center'}),
+    html.H3("Standard Deviation of all districts for selected Column", style={'text-align': 'center'}),
+    dcc.Graph(id='columnStdDev', figure={}, style={"border":"2px black solid"}),
+    html.H3("Outliers Above average", style={'text-align': 'left'}),
     html.Div(id='aboveAvg', children=[]),
 
-    html.H3("Outliers Below average", style={'text-align': 'center'}),
+    html.H3("Outliers Below average", style={'text-align': 'left'}),
     html.Div(id='belowAvg', children=[]),
 
-    dcc.Graph(id='columnStdDev', figure={})
+    html.H3("Correlation and Trend Line between two selected Columns", style={'text-align': 'center'}),
+
+    dcc.Graph(id='correlation', figure={}, style={"border":"2px black solid"})
 
 
 
@@ -123,6 +147,40 @@ def detectOutliers(chosenCol, table):
     blwOutlier = thisTable.loc[thisTable['isOutlier'] & (thisTable[chosenCol] <= lowerBound)]['geography'].to_string()
 
     return fig, abvOutlier, blwOutlier
+
+@app.callback(
+    [Output(component_id='slct_data2', component_property='options'),
+     Output(component_id='slct_data2', component_property='value')],
+    [Input(component_id='slct_table2', component_property='value')]
+)
+def update_graph(option_slctd):
+
+    columns = tableList[option_slctd]
+    return columns, columns[0]['value']
+
+@app.callback(
+    Output(component_id='correlation', component_property='figure'),
+    [Input(component_id='slct_table', component_property='value'),
+     Input(component_id='slct_data', component_property='value'),
+     Input(component_id='slct_table2', component_property='value'),
+     Input(component_id='slct_data2', component_property='value')
+     ]
+)
+def detectOutliers(table1, chosenCol1, table2, chosenCol2):
+    path1 = f"ProcessedData/{table1}"
+    thisTable1 = pd.read_csv(path1)
+    thisTable1 = thisTable1[['geography', chosenCol1]]
+
+    path2 = f"ProcessedData/{table2}"
+    thisTable2 = pd.read_csv(path2)
+    thisTable2 = thisTable2[['geography', chosenCol2]]
+
+    merged = thisTable1.merge(thisTable2)
+    correlate = merged.corr(method='pearson')
+    print(merged.to_string())
+    print(correlate)
+    fig = px.scatter(merged, x=chosenCol1, y=chosenCol2, trendline="ols")
+    return (fig)
 
 # ------------------------------------------------------------------------------
 if __name__ == '__main__':

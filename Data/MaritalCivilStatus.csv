@@ -1,4 +1,5 @@
-"date","geography","geography code","Rural Urban","2011","Darlington","E06000005","Total",85357,27083,39963,135,2409,9165,6602
+"date","geography","geography code","Rural Urban","Marital Status: All usual residents aged 16+; measures: Value","Marital Status: Single (never married or never registered a same-sex civil partnership); measures: Value","value": "Marital Status: Married; measures: Value","Marital Status: In a registered same-sex civil partnership; measures: Value","value": "Marital Status: Separated (but still legally married or still legally in a same-sex civil partnership); measures: Value","value": "Marital Status: Divorced or formerly in a same-sex civil partnership which is now legally dissolved; measures: Value","value": "Marital Status: Widowed or surviving partner from a same-sex civil partnership; measures: Value"
+"2011","Darlington","E06000005","Total",85357,27083,39963,135,2409,9165,6602
 "2011","County Durham","E06000047","Total",425258,137980,200826,759,10708,41207,33778
 "2011","Hartlepool","E06000001","Total",74228,25531,33211,116,1771,7392,6207
 "2011","Middlesbrough","E06000002","Total",110409,43550,45718,160,2990,9736,8255

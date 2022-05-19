@@ -66,7 +66,7 @@ app.layout = html.Div([
 
     dcc.Graph(id='my_map', figure={}, style={"border":"2px black solid"}),
 
-    html.H3("Standard Deviation of all districts for selected Column", style={'text-align': 'center'}),
+    html.H3("Standard Deviation of all districts for Target Table and Column", style={'text-align': 'center'}),
     dcc.Graph(id='columnStdDev', figure={}, style={"border":"2px black solid"}),
     html.H3("Outliers Above average", style={'text-align': 'left'}),
     html.Div(id='aboveAvg', children=[]),
@@ -74,7 +74,7 @@ app.layout = html.Div([
     html.H3("Outliers Below average", style={'text-align': 'left'}),
     html.Div(id='belowAvg', children=[]),
 
-    html.H3("Correlation and Trend Line between two selected Columns", style={'text-align': 'center'}),
+    html.H3("Correlation and Trend Line between Target and Secondary column", style={'text-align': 'center'}),
 
     dcc.Graph(id='correlation', figure={}, style={"border":"2px black solid"})
 
